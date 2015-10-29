@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schema.org master file: RDFS in RDFa</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      span.h {
+        padding-left: 0px;
+        font-weight: bold;
+      }
+      span {
+        display: block;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>FIBO Core Proposal for Schema.org</h1>
+
+	<div typeof="http://schema.org/Organization" resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">
+	  <span property="rdfs:label">FIBO</span>
+	  <span property="rdfs:comment">This element is based on the work of the W3C Finance Ontology Community Group, see &lt;a href=&quot;https://www.w3.org/community/fibo/ &quot;&gt; https://www.w3.org/community/fibo/ &lt;/a&gt; for details. Many class and property definitions are inspired by or based on concepts from the &lt;a href=&quot;http://www.edmcouncil.org/financialbusiness&quot;&gt; Financial Industry Business Ontology (FIBO)&lt;/a&gt;. FIBO is a registered trademark of the  Enterprise Data Management Council (EDMC).</span>
+	</div>
+	
+<!-- 
+	
+	1. Example for FeeOrCommission table with CompoundPriceSpecification
+	recommended approach: 
+	- define one boilerplate schema:Offer -> schema:priceSpecificaion ->schema:CompoundPriceSpecification -> schema:url [PDF]
+
+	maybe augmented by key features as richer data (e.g. APR, down payment, fees,...)
+	alternative: http://schema.org/Table / http://bib.schema.org/publisherImprint
+	schema:feesAndCommissions domain schema:FinancialService, range:Table
+
+	Requirements / Problems:
+	Unit code for APR?
+	How to model down payments (price vs. payment?)
+
+	-->
+    <div typeof="rdfs:Class" resource="http://schema.org/FancyType">
+      <span class="h" property="rdfs:label">CreativeWork</span>
+      <span property="rdfs:comment">The most generic kind of creative work, including books, movies, photographs, software programs, etc.</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Thing">Thing</a></span>
+       <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span></div>
+
+
+<div typeof="rdf:Property" resource="http://schema.org/fancyProp">
+    <span class="h" property="rdfs:label">fancyProp</span>
+    <span property="rdfs:comment">The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc.</span>
+    <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/FancyType">FancyType</a></span>
+    <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/URL">URL</a></span>
+	<span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span>
+</div>
+
+
+<div typeof="http://schema.org/SteeringPositionValue" resource="http://schema.org/ACME">
+  <span class="h" property="rdfs:label">ACMEDriving</span>
+  <span property="rdfs:comment">The steering position is on the left side of the vehicle (viewed from the main direction of driving).</span>
+  <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span>
+</div>
+
+
+</body>
+
+</html>
