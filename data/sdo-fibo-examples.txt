@@ -1,0 +1,32 @@
+TYPES: FancyType
+
+PRE-MARKUP:
+
+<!-- Seller Details -->
+<div >
+</div>
+
+MICRODATA:
+
+<!-- Seller Details -->
+<div itemscope itemtype="http://schema.org/Person">
+   </span>
+   </div>
+</div>
+
+RDFA:
+
+<!-- Seller Details -->
+<div vocab="http://schema.org/" typeof="Person">
+  </div>
+</div>
+
+JSON:
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name" : "Brent",
+}
+</script>
