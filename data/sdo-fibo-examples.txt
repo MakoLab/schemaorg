@@ -1144,7 +1144,3 @@ JSON:
   "interestRate": "1.25"
 }
 </script>
-
-
-
-
