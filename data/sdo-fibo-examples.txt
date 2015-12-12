@@ -14,14 +14,23 @@ MICRODATA:
 <div itemscope itemtype="http://schema.org/CreditCard">
     <span itemprop="name">Wells Fargo Secured Visa® Credit Card</span>
     <span itemprop="loanCollateral">Requires a minimum $300 security deposit.</span>
-    <span itemscope itemtype="http://schema.org/MonetaryAmount" itemprop="amount">When you apply, you provide a minimum security deposit of at least <span itemprop="currency" content="USD">$</span><span itemprop="minValue">300</span>, or up to $<span itemprop="maxValue" content="10000">10,000</span>.</span>
-    <span itemscope itemtype="http://schema.org/UnitPriceSpecification" itemprop="priceSpecification">Annual fee <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price">25</span>
-        <span itemscope itemtype="http://schema.org/QuantitativeValue" itemprop="referenceQuantity">
-            <meta itemprop="value" content="1"><meta itemprop="unitCode" content="ANN">
-        </span>
+    <span itemprop="amount" itemscope itemtype="http://schema.org/MonetaryAmount">When you apply, you provide a minimum security deposit of at least 
+      <span itemprop="currency" content="USD">$</span>
+      <span itemprop="minValue">300</span>, or up to $
+      <span itemprop="maxValue" content="10000">10,000</span>.
     </span>
-  <span>Annual Percentage Rate (APR) Currently, a variable <span itemprop="annualPercentageRate">18.99</span>% APR on purchases. (These APRs do not apply to cash advances.)</span>
-  <a itemprop="feesAndCommissionsSpecification" href="https://www.wellsfargo.com/credit-cards/secured/terms/">Full terms and conditions</a>
+    
+    <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">Annual fee 
+      <span itemprop="priceCurrency" content="USD">$</span>
+      <span itemprop="price">25</span>
+      <span itemprop="referenceQuantity" itemscope itemtype="http://schema.org/QuantitativeValue">
+          <meta itemprop="value" content="1"><meta itemprop="unitCode" content="ANN">
+      </span>
+      </span>
+    <span>Annual Percentage Rate (APR) Currently, a variable 
+      <span itemprop="annualPercentageRate">18.99</span>% APR on purchases. (These APRs do not apply to cash advances.)
+    </span>
+    <a itemprop="feesAndCommissionsSpecification" href="https://www.wellsfargo.com/credit-cards/secured/terms/">Full terms and conditions</a>
 </div>
 
 RDFA:
@@ -29,14 +38,23 @@ RDFA:
 <div vocab="http://schema.org/" typeof="CreditCard">
     <span property="name">Wells Fargo Secured Visa® Credit Card</span>
     <span property="loanCollateral">Requires a minimum $300 security deposit.</span>
-    <span typeof="MonetaryAmount" property="amount">When you apply, you provide a minimum security deposit of at least <span property="currency" content="USD">$</span><span property="minValue">300</span>, or up to $<span property="maxValue" content="10000">10,000</span>.</span>
-    <span typeof="UnitPriceSpecification" property="priceSpecification">Annual fee <span property="priceCurrency" content="USD">$</span><span property="price">25</span>
-        <span typeof="QuantitativeValue" property="referenceQuantity">
-            <meta property="value" content="1"><meta property="unitCode" content="ANN">
-        </span>
+    <span property="amount" typeof="MonetaryAmount">When you apply, you provide a minimum security deposit of at least 
+      <span property="currency" content="USD">$</span>
+      <span property="minValue">300</span>, or up to $
+      <span property="maxValue" content="10000">10,000</span>.
+    </span>    
+    <span property="priceSpecification" typeof="UnitPriceSpecification">Annual fee 
+      <span property="priceCurrency" content="USD">$</span>
+      <span property="price">25</span>
+      <span property="referenceQuantity" typeof="QuantitativeValue">
+          <meta property="value" content="1">
+          <meta property="unitCode" content="ANN">
+      </span>
     </span>
-  <span>Annual Percentage Rate (APR) Currently, a variable <span property="annualPercentageRate">18.99</span>% APR on purchases. (These APRs do not apply to cash advances.)</span>
-  <a property="feesAndCommissionsSpecification" href="https://www.wellsfargo.com/credit-cards/secured/terms/">Full terms and conditions</a>
+    <span>Annual Percentage Rate (APR) Currently, a variable 
+      <span property="annualPercentageRate">18.99</span>% APR on purchases. (These APRs do not apply to cash advances.)
+    </span>
+    <a property="feesAndCommissionsSpecification" href="https://www.wellsfargo.com/credit-cards/secured/terms/">Full terms and conditions</a>
 </div>
 
 JSON:
@@ -57,7 +75,7 @@ JSON:
       "@type": "UnitPriceSpecification",
       "price": "25",
       "priceCurrency": "USD",
-      "referenceQuantitiy": {
+      "referenceQuantity": {
         "@type": "QuantitativeValue",
         "value": "1",
         "unitCode": "ANN"
@@ -94,42 +112,41 @@ MICRODATA:
 <!-- Wells Fargo GraduateSM Student Loan -->
 
 <div itemscope itemtype="http://schema.org/LoanOrCredit">
-<span itemprop="name">Wells Fargo GraduateSM Student Loan</span>
+  <span itemprop="name">Wells Fargo GraduateSM Student Loan</span>
+  You'll have up to
+  <div itemprop="loanTerm" itemscope itemtype="http://schema.org/QuantitativeValue">
+    <span itemprop="value" content="15">15</span>
+    <span itemprop="unitCode" content="ANN">years</span>
+  </div>
+  to repay the loan.
 
-You'll have up to
-<div itemprop="loanTerm” itemscope itemtype="http://schema.org/QuantitativeValue">
-<span itemprop="value" content="15">15</span>
-<span itemprop="unitCode" content="ANN">years</span>
-</div>
-to repay the loan.
+  Competitive Annual Percentage Rate (APR)
+  <div itemprop="annualPercentageRate" itemscope itemtype="http://schema.org/QuantitativeValue">
+    <span itemprop="name">Variable interest rates</span>
+    range from
+    <span itemprop="minValue" content="3.22">3.22%</span> APR (with discount) to
+    <span itemprop="maxValue" content="8.74">8.74%</span> APR (without discount).
+  </div>
 
-Competitive Annual Percentage Rate (APR)
-<div itemprop="annualPercentageRate" itemscope itemtype="http://schema.org/QuantitativeValue">
-<span itemprop="name">Variable interest rates</span>
-range from
-<span itemprop="minValue" content="3.22">3.22%</span> APR (with discount) to
-<span itemprop="maxValue" content="8.74">8.74%</span> APR (without discount).
-</div>
+  <div itemprop="annualPercentageRate" itemscope itemtype="http://schema.org/QuantitativeValue">
+    <span itemprop="name">Fixed interest rates</span>
+    range from
+    <span itemprop="minValue" content="6.36">6.36%</span> APR (with discount) to
+    <span itemprop="maxValue" content="10.61">10.61%</span> APR (without discount).
+  </div>
 
-<div itemprop="annualPercentageRate" itemscope itemtype="http://schema.org/QuantitativeValue">
-<span itemprop="name">Fixed interest rates</span>
-range from
-<span itemprop="minValue" content="6.36">6.36%</span> APR (with discount) to
-<span itemprop="maxValue" content="10.61">10.61%</span> APR (without discount).
-</div>
-
-The lifetime limit for this loan combined with all other education-related debt is
-<div itemprop="amount" itemscope itemtype="http://schema.org/MonetaryAmount">
-<span itemprop="currency" content="USD">$</span>
-<span itemprop="value" content="180000">180,000</span>
-<span itemprop="name">for law and business</span>,
-</div>
-and
-<div itemprop="amount" itemscope itemtype="http://schema.org/MonetaryAmount">
-<span itemprop="currency" content="USD">$</span>
-<span itemprop="value" content="120000">120,000</span>
-<span itemprop="name">for other fields of study</span>.
-</div>
+  The lifetime limit for this loan combined with all other education-related debt is
+  <div itemprop="amount" itemscope itemtype="http://schema.org/MonetaryAmount">
+    <span itemprop="currency" content="USD">$</span>
+    <span itemprop="value" content="180000">180,000</span>
+    <span itemprop="name">for law and business</span>,
+  </div>
+  and
+  <div itemprop="amount" itemscope itemtype="http://schema.org/MonetaryAmount">
+    <span itemprop="currency" content="USD">$</span>
+    <span itemprop="value" content="120000">120,000</span>
+    <span itemprop="name">for other fields of study</span>.
+  </div>
 </div>
 
 
@@ -138,42 +155,42 @@ RDFA:
 <!-- Wells Fargo GraduateSM Student Loan -->
 
 <div vocab="http://schema.org/" typeof="LoanOrCredit">
-<span property="name">Wells Fargo GraduateSM Student Loan</span>
+  <span property="name">Wells Fargo GraduateSM Student Loan</span>
 
-You'll have up to
-<div property="loanTerm” typeof="QuantitativeValue">
-	<span property="value" content="15">15</span>
-	<span property="unitCode" content="ANN">years</span>
-</div>
-to repay the loan.
+  You'll have up to
+  <div property="loanTerm" typeof="QuantitativeValue">
+	   <span property="value" content="15">15</span>
+	   <span property="unitCode" content="ANN">years</span>
+  </div>
+  to repay the loan.
 
-Competitive Annual Percentage Rate (APR)
-<div property="annualPercentageRate" typeof="QuantitativeValue">
-<span property="name">Variable interest rates</span>
-range from
-<span property="minValue" content="3.22">3.22%</span> APR (with discount) to
-<span property="maxValue" content="8.74">8.74%</span> APR (without discount).
-</div>
+  Competitive Annual Percentage Rate (APR)
+  <div property="annualPercentageRate" typeof="QuantitativeValue">
+    <span property="name">Variable interest rates</span>
+    range from
+    <span property="minValue" content="3.22">3.22%</span> APR (with discount) to
+    <span property="maxValue" content="8.74">8.74%</span> APR (without discount).
+  </div>
 
-<div property="annualPercentageRate" typeof="QuantitativeValue">
-<span property="name">Fixed interest rates</span>
-range from
-<span property="minValue" content="6.36">6.36%</span> APR (with discount) to
-<span property="maxValue" content="10.61">10.61%</span> APR (without discount).
-</div>
+  <div property="annualPercentageRate" typeof="QuantitativeValue">
+    <span property="name">Fixed interest rates</span>
+    range from
+    <span property="minValue" content="6.36">6.36%</span> APR (with discount) to
+    <span property="maxValue" content="10.61">10.61%</span> APR (without discount).
+  </div>
 
-The lifetime limit for this loan combined with all other education-related debt is
-<div property="amount" typeof="MonetaryAmount">
-<span property="currency" content="USD">$</span>
-<span property="value" content="180000">180,000</span>
-<span property="name">for law and business</span>,
-</div>
-and
-<div property="amount" typeof="MonetaryAmount">
-<span property="currency" content="USD">$</span>
-<span property="value" content="120000">120,000</span>
-<span property="name">for other fields of study</span>.
-</div>
+  The lifetime limit for this loan combined with all other education-related debt is
+  <div property="amount" typeof="MonetaryAmount">
+    <span property="currency" content="USD">$</span>
+    <span property="value" content="180000">180,000</span>
+    <span property="name">for law and business</span>,
+  </div>
+  and
+  <div property="amount" typeof="MonetaryAmount">
+    <span property="currency" content="USD">$</span>
+    <span property="value" content="120000">120,000</span>
+    <span property="name">for other fields of study</span>.
+  </div>
 </div>
 
 
@@ -186,7 +203,7 @@ JSON:
 "@context":"http://schema.org",
 "@type":"LoanOrCredit",
 "name":"Wells Fargo GraduateSM Student Loan",
-"loanTerm”:{
+"loanTerm":{
     "@type":"QuantitativeValue",
     "value":"15",
     "unitCode": "ANN"
