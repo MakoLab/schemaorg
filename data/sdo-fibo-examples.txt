@@ -19,14 +19,16 @@ MICRODATA:
       <span itemprop="minValue">300</span>, or up to $
       <span itemprop="maxValue" content="10000">10,000</span>.
     </span>
-    
-    <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">Annual fee 
-      <span itemprop="priceCurrency" content="USD">$</span>
-      <span itemprop="price">25</span>
-      <span itemprop="referenceQuantity" itemscope itemtype="http://schema.org/QuantitativeValue">
-          <meta itemprop="value" content="1"><meta itemprop="unitCode" content="ANN">
+    <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <meta itemprop="offeredBy" content="Wells Fargo">
+      <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">Annual fee 
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">25</span>
+        <span itemprop="referenceQuantity" itemscope itemtype="http://schema.org/QuantitativeValue">
+            <meta itemprop="value" content="1"><meta itemprop="unitCode" content="ANN">
+        </span>
       </span>
-      </span>
+    </span>
     <span>Annual Percentage Rate (APR) Currently, a variable 
       <span itemprop="annualPercentageRate">18.99</span>% APR on purchases. (These APRs do not apply to cash advances.)
     </span>
@@ -42,13 +44,16 @@ RDFA:
       <span property="currency" content="USD">$</span>
       <span property="minValue">300</span>, or up to $
       <span property="maxValue" content="10000">10,000</span>.
-    </span>    
-    <span property="priceSpecification" typeof="UnitPriceSpecification">Annual fee 
-      <span property="priceCurrency" content="USD">$</span>
-      <span property="price">25</span>
-      <span property="referenceQuantity" typeof="QuantitativeValue">
-          <meta property="value" content="1">
-          <meta property="unitCode" content="ANN">
+    </span>
+    <span property="offers" typeof="Offer">
+      <meta property="offeredBy" content="Wells Fargo">
+      <span property="priceSpecification" typeof="UnitPriceSpecification">Annual fee 
+        <span property="priceCurrency" content="USD">$</span>
+        <span property="price">25</span>
+        <span property="referenceQuantity" typeof="QuantitativeValue">
+            <meta property="value" content="1">
+            <meta property="unitCode" content="ANN">
+        </span>
       </span>
     </span>
     <span>Annual Percentage Rate (APR) Currently, a variable 
@@ -71,7 +76,10 @@ JSON:
       "maxValue": "10000",
       "currency": "USD"
   },
-  "priceSpecification": {
+  "offers": {
+    "@type": "Offer",
+    "offeredBy": "Wells Fargo",
+    "priceSpecification": {
       "@type": "UnitPriceSpecification",
       "price": "25",
       "priceCurrency": "USD",
@@ -80,6 +88,7 @@ JSON:
         "value": "1",
         "unitCode": "ANN"
       }
+    }
   },
   "annualPercentageRate": "18.99",
   "feesAndCommissionsSpecification": "https://www.wellsfargo.com/credit-cards/secured/terms/"
