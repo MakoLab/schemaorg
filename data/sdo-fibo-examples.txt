@@ -20,12 +20,12 @@ MICRODATA:
       <span itemprop="maxValue" content="10000">10,000</span>.
     </span>
     <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-      <meta itemprop="offeredBy" content="Wells Fargo">
+      <meta itemprop="offeredBy" content="Wells Fargo"/>
       <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">Annual fee 
         <span itemprop="priceCurrency" content="USD">$</span>
         <span itemprop="price">25</span>
         <span itemprop="referenceQuantity" itemscope itemtype="http://schema.org/QuantitativeValue">
-            <meta itemprop="value" content="1"><meta itemprop="unitCode" content="ANN">
+            <meta itemprop="value" content="1"/><meta itemprop="unitCode" content="ANN"/>
         </span>
       </span>
     </span>
@@ -46,13 +46,13 @@ RDFA:
       <span property="maxValue" content="10000">10,000</span>.
     </span>
     <span property="offers" typeof="Offer">
-      <meta property="offeredBy" content="Wells Fargo">
+      <meta property="offeredBy" content="Wells Fargo"/>
       <span property="priceSpecification" typeof="UnitPriceSpecification">Annual fee 
         <span property="priceCurrency" content="USD">$</span>
         <span property="price">25</span>
         <span property="referenceQuantity" typeof="QuantitativeValue">
-            <meta property="value" content="1">
-            <meta property="unitCode" content="ANN">
+            <meta property="value" content="1"/>
+            <meta property="unitCode" content="ANN"/>
         </span>
       </span>
     </span>
@@ -171,8 +171,8 @@ RDFA:
 
   You'll have up to
   <div property="loanTerm" typeof="QuantitativeValue">
-	   <span property="value" content="15">15</span>
-	   <span property="unitCode" content="ANN">years</span>
+       <span property="value" content="15">15</span>
+       <span property="unitCode" content="ANN">years</span>
   </div>
   to repay the loan.
 
@@ -448,7 +448,7 @@ RDFA:
         </li>
     </ul>
     <a href="http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf">Account Terms</a>
-<div>
+</div>
 
 
 JSON:
@@ -459,7 +459,7 @@ JSON:
     "@graph": [
     {
         "@type": "BankAccount",
-        "name": "Select account",
+        "name": "Select  account",
         "offers": {
             "@type": "Offer",
             "eligibleCustomerType": {
@@ -473,18 +473,14 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification": {
-        "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-      }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
     },
     {
         "@type": "BankAccount",
         "name": "Select Silver account",
         "offers": {
             "@type": "Offer",
-            "eligibleCustomerType": {
-                "@id":"http://purl.org/goodrelations/v1#Enduser"
-            },
+            "eligibleCustomerType": "http://purl.org/goodrelations/v1#Enduser",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "GBP",
@@ -502,18 +498,14 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification":{
-            "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-        }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
     },
     {
         "@type": "BankAccount",
         "name": "Select Platinum account",
         "offers": {
             "@type": "Offer",
-            "eligibleCustomerType": {
-                "@id":"http://purl.org/goodrelations/v1#Enduser"
-            },
+            "eligibleCustomerType": "http://purl.org/goodrelations/v1#Enduser",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "GBP",
@@ -531,18 +523,14 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification":{
-            "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-        }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
     },
     {
         "@type": "BankAccount",
         "name": "Black account",
         "offers": {
             "@type": "Offer",
-            "eligibleCustomerType": {
-                "@id":"http://purl.org/goodrelations/v1#Enduser"
-            },
+            "eligibleCustomerType": "http://purl.org/goodrelations/v1#Enduser",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "GBP",
@@ -560,10 +548,8 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification":{
-            "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-        }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
+        
     }
     ]   
-}
-</script>
+}</script>
