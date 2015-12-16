@@ -79,7 +79,7 @@ JSON:
   "offers": {
       "@type": "Offer",
       "offeredBy": {
-        "@type": "BankOrCreditUnion ",
+        "@type": "BankOrCreditUnion",
         "name":"Wells Fargo"
       },    
       "priceSpecification": {
