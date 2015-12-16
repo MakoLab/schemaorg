@@ -17,13 +17,63 @@
 
 {% import 'ext.tpl' as ext with context %}
 
-{% if myhost in [ "sdo-phobos.appspot.com", "sdo-ganymede.appspot.com", "sdo-gozer.appspot.com", "sdo-tully.appspot.com", "sdo-lenny.appspot.com", "webschemas.org", "sdo-scripts.appspot.com", "localhost" ] %}
+{% if mybasehost in [ "sdo-deimos.appspot.com", "sdo-phobos.appspot.com", "sdo-ganymede.appspot.com", "sdo-gozer.appspot.com", "sdo-tully.appspot.com", "sdo-lenny.appspot.com", "webschemas.org", "sdo-scripts.appspot.com", "localhost" ] %}
 
 <p id="lli" class="layerinfo">
-Note: This is {{ myhost }}. you are viewing an unstable work-in-progress preview of <a href="http://schema.org/">schema.org</a>.
+Note: This is {{ mybasehost }}. you are viewing an unstable work-in-progress preview of <a href="http://schema.org/">schema.org</a>.
 See the draft <b><a href="{{staticPath}}/docs/releases.html">releases</a></b> page to learn more about this version.
 </p>
 
+{% endif %}
+
+{% if mybasehost in [ "sdo-fibo.appspot.com", "localhost" ] %}
+<br/>
+<h2>Important Note:</h2> You are viewing a test version of Schema.org that includes draft proposals for financially related additions to the core Schema.org vocabulary.<br/><br/>
+
+These efforts are based on the work of the Financial Industry Business Ontology (FIBO) project (see <a href="http://www.edmcouncil.org/financialbusiness/fiboschemaorg">http://www.edmcouncil.org/financialbusiness/fiboschemaorg</a> for details), with support of the W3C FIBO Community Group ( <a href="https://www.w3.org/community/fibo">https://www.w3.org/community/fibo</a>). 
+
+<br/>
+These proposals include the following Types:
+<ul>
+	<li><a href="/MonetaryAmount">MonetaryAmount</a></li>
+	<li><a href="/RelativePriceSpecification">RelativePriceSpecification</a></li>
+	<li><a href="/FinancialProduct">FinancialProduct</a></li>
+	<li><a href="/BankAccount">BankAccount</a></li>
+	<li><a href="/DepositAccount">DepositAccount</a></li>
+	<li><a href="/LoanOrCredit">LoanOrCredit</a></li>
+	<li><a href="/PaymentCard">PaymentCard</a></li>
+	<li><a href="/InvestmentOrDeposit">InvestmentOrDeposit</a></li>
+	<li><a href="/PaymentService">PaymentService</a></li>
+	<li><a href="/CurrencyConversionService">CurrencyConversionService</a></li>
+</ul>
+These proposals include the following Properties:
+<ul>
+	<li><a href="/annualPercentageRate">annualPercentageRate</a></li>
+	<li><a href="/feesAndCommissionsSpecification">feesAndCommissionsSpecification</a></li>
+	<li><a href="/interestRate">interestRate</a></li>
+	<li><a href="/leiCode">leiCode</a></li>
+	<li><a href="/loanCollateral">loanCollateral</a></li>
+	<li><a href="/loanTerm">loanTerm</a></li>
+</ul>	
+These proposals include updates to the following current schema.org terms:
+<ul>
+	<li><a href="/CreditCard">CreditCard</a></li>
+	<li><a href="/PaymentMethod">PaymentMethod</a></li>
+	<li><a href="/amount">amount</a></li>
+	<li><a href="/acceptedPaymentMethod">acceptedPaymentMethod</a></li>
+	<li><a href="/aggregateRating">aggregateRating</a></li>
+	<li><a href="/audience">audience</a></li>
+	<li><a href="/brand">brand</a></li>
+	<li><a href="/currency">currency</a></li>
+	<li><a href="/isRelatedTo">isRelatedTo</a></li>
+	<li><a href="/isSimilarTo">isSimilarTo</a></li>
+	<li><a href="/logo">logo</a></li>
+	<li><a href="/maxValue">maxValue</a></li>
+	<li><a href="/minValue">minValue</a></li>
+	<li><a href="/review">review</a></li>
+	<li><a href="/value">value</a></li>
+</ul>
+<hr/>
 {% endif %}
 
 
