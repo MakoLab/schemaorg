@@ -77,18 +77,21 @@ JSON:
       "currency": "USD"
   },
   "offers": {
-    "@type": "Offer",
-    "offeredBy": "Wells Fargo",
-    "priceSpecification": {
-      "@type": "UnitPriceSpecification",
-      "price": "25",
-      "priceCurrency": "USD",
-      "referenceQuantity": {
-        "@type": "QuantitativeValue",
-        "value": "1",
-        "unitCode": "ANN"
+      "@type": "Offer",
+      "offeredBy": {
+        "@type": "Organization",
+        "name":"Wells Fargo"
+      },    
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "25",
+        "priceCurrency": "USD",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": "1",
+          "unitCode": "ANN"
+        }
       }
-    }
   },
   "annualPercentageRate": "18.99",
   "feesAndCommissionsSpecification": "https://www.wellsfargo.com/credit-cards/secured/terms/"
@@ -217,30 +220,34 @@ JSON:
     "value":"15",
     "unitCode": "ANN"
 },
-"annualPercentageRate":[{
+"annualPercentageRate":[
+  {
     "@type":"QuantitativeValue",
     "name": "variable interest rates",
     "minValue":"3.22",
     "maxValue":"8.74"
-},
-{
+  },
+  {
     "@type":"QuantitativeValue",
     "name": "fixed interest rates",
     "minValue":"6.36",
     "maxValue":"10.61"
-}],
-"amount":[{
+  }
+  ],
+"amount":[
+  {
     "@type": "MonetaryAmount",
     "name":"debt for law and business",
     "value":"180000",
     "currency":"USD"
-},
-{
+  },
+  {
     "@type": "MonetaryAmount",
     "name":"debt for other fields of study than law and business",
     "value":"120000",
     "currency":"USD"
-}]
+  }
+  ]
 }
 </script>
 
