@@ -1342,7 +1342,7 @@ RDFA:
         </li>
     </ul>
     <a href="http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf">Account Terms</a>
-<div>
+</div>
 
 
 JSON:
@@ -1367,18 +1367,14 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification": {
-        "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-      }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
     },
     {
         "@type": "BankAccount",
         "name": "Select Silver account",
         "offers": {
             "@type": "Offer",
-            "eligibleCustomerType": {
-                "@id":"http://purl.org/goodrelations/v1#Enduser"
-            },
+            "eligibleCustomerType": "http://purl.org/goodrelations/v1#Enduser",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "GBP",
@@ -1396,18 +1392,14 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification":{
-            "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-        }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
     },
     {
         "@type": "BankAccount",
         "name": "Select Platinum account",
         "offers": {
             "@type": "Offer",
-            "eligibleCustomerType": {
-                "@id":"http://purl.org/goodrelations/v1#Enduser"
-            },
+            "eligibleCustomerType": "http://purl.org/goodrelations/v1#Enduser",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "GBP",
@@ -1425,18 +1417,14 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification":{
-            "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-        }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
     },
     {
         "@type": "BankAccount",
         "name": "Black account",
         "offers": {
             "@type": "Offer",
-            "eligibleCustomerType": {
-                "@id":"http://purl.org/goodrelations/v1#Enduser"
-            },
+            "eligibleCustomerType": "http://purl.org/goodrelations/v1#Enduser",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "GBP",
@@ -1454,10 +1442,8 @@ JSON:
                 "name": "RBS"
             }
         },
-        "feesAndCommissionsSpecification":{
-            "@id": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
-        }
+        "feesAndCommissionsSpecification": "http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"
+        
     }
     ]   
-}
-</script>
+}</script>
