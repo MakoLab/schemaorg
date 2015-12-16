@@ -79,7 +79,7 @@ JSON:
   "offers": {
       "@type": "Offer",
       "offeredBy": {
-        "@type": "Organization",
+        "@type": "BankOrCreditUnion ",
         "name":"Wells Fargo"
       },    
       "priceSpecification": {
@@ -459,7 +459,7 @@ JSON:
     "@graph": [
     {
         "@type": "BankAccount",
-        "name": "Select  account",
+        "name": "Select account",
         "offers": {
             "@type": "Offer",
             "eligibleCustomerType": {
