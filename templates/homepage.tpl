@@ -38,7 +38,7 @@ These proposals include the following Types:
 	<li><a href="/MonetaryAmount">MonetaryAmount</a></li>
 	<li><a href="/RelativePriceSpecification">RelativePriceSpecification</a></li>
 	<li><a href="/FinancialProduct">FinancialProduct</a></li>
-	<li><a href="/BankAccount">BankAccount</a></li>
+	<li><a href="/BankAccount">BankAccount</a></li>	
 	<li><a href="/DepositAccount">DepositAccount</a></li>
 	<li><a href="/LoanOrCredit">LoanOrCredit</a></li>
 	<li><a href="/PaymentCard">PaymentCard</a></li>
@@ -52,8 +52,8 @@ These proposals include the following Properties:
 	<li><a href="/feesAndCommissionsSpecification">feesAndCommissionsSpecification</a></li>
 	<li><a href="/interestRate">interestRate</a></li>
 	<li><a href="/leiCode">leiCode</a></li>
-	<li><a href="/collateralRequired">collateralRequired</a></li>
 	<li><a href="/loanTerm">loanTerm</a></li>
+	<li><a href="/requiredCollateral">requiredCollateral</a></li>
 </ul>	
 These proposals include updates to the following current schema.org terms:
 <ul>

@@ -194,8 +194,8 @@
 	              </div>
 
 	              <!-- NEEDS EXPLANATION -->
-	              <div typeof="rdf:Property" resource="http://schema.org/collateralRequired">
-	                <span class="h" property="rdfs:label">collateralRequired</span>
+	              <div typeof="rdf:Property" resource="http://schema.org/requiredCollateral">
+	                <span class="h" property="rdfs:label">requiredCollateral</span>
 	                <span property="rdfs:comment">Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)</span>
 	                <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/LoanOrCredit">LoanOrCredit</a></span>
 	                <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Thing">Thing</a></span>
