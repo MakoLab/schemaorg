@@ -155,7 +155,7 @@
 
 	        <div typeof="rdfs:Class" resource="http://schema.org/BankAccount">
 	          <span class="h" property="rdfs:label">BankAccount</span>
-	          <span property="rdfs:comment">An product or service offered by a bank whereby one may deposit, withdraw or transfer money and in some cases be paid interest.</span>
+	          <span property="rdfs:comment">A product or service offered by a bank whereby one may deposit, withdraw or transfer money and in some cases be paid interest.</span>
 	          <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/FinancialProduct">FinancialProduct</a></span>
 	          <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span>
 	        </div>
