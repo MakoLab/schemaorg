@@ -52,7 +52,7 @@ These proposals include the following Properties:
 	<li><a href="/feesAndCommissionsSpecification">feesAndCommissionsSpecification</a></li>
 	<li><a href="/interestRate">interestRate</a></li>
 	<li><a href="/leiCode">leiCode</a></li>
-	<li><a href="/loanCollateral">loanCollateral</a></li>
+	<li><a href="/collateralRequired">collateralRequired</a></li>
 	<li><a href="/loanTerm">loanTerm</a></li>
 </ul>	
 These proposals include updates to the following current schema.org terms:
