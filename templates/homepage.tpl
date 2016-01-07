@@ -58,7 +58,6 @@ These proposals include the following Properties:
 These proposals include updates to the following current schema.org terms:
 <ul>
 	<li><a href="/CreditCard">CreditCard</a></li>
-	<li><a href="/PaymentMethod">PaymentMethod</a></li>
 	<li><a href="/amount">amount</a></li>
 	<li><a href="/acceptedPaymentMethod">acceptedPaymentMethod</a></li>
 	<li><a href="/aggregateRating">aggregateRating</a></li>
