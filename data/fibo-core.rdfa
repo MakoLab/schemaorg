@@ -146,7 +146,7 @@
 
 	        <div typeof="rdf:Property" resource="http://schema.org/interestRate">
 	          <span class="h" property="rdfs:label">interestRate</span>
-	          <span property="rdfs:comment">The interest rate, charged or returned, applicable to the financial product. Note: This is different from the calculated annualPercentageRate.</span>
+	          <span property="rdfs:comment">The interest rate, charged or paid, applicable to the financial product. Note: This is different from the calculated annualPercentageRate.</span>
 	          <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/FinancialProduct">FinancialProduct</a></span>
 	          <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>
 	          <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
