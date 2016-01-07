@@ -85,12 +85,14 @@
 	  <div typeof="rdf:Property" resource="http://schema.org/isRelatedTo">
 	    <span class="h" property="rdfs:label">isRelatedTo</span>
 	    <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Service">Service</a></span>
+	    <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Service">Service</a></span>
 	    <!-- <span>Source: <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span> -->
 	  </div>
 
 	  <div typeof="rdf:Property" resource="http://schema.org/isSimilarTo">
 	    <span class="h" property="rdfs:label">isSimilarTo</span>
 	    <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Service">Service</a></span>
+	    <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Service">Service</a></span>
 	    <!-- <span>Source: <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span> -->
 	  </div>
 
