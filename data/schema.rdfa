@@ -12652,12 +12652,10 @@ Typical unit code(s): C62 for persons.</span>
     <span property="rdfs:comment">An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.</span>
     <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Organization">Organization</a></span>
     <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
-    <!-- source gleio? -->
     <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span>
   </div>  
 
 
-  <!-- FinancialProduct -->
   <div typeof="rdfs:Class" resource="http://schema.org/FinancialProduct">
     <span class="h" property="rdfs:label">FinancialProduct</span>
     <span property="rdfs:comment">A product provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage firms, consumer finance companies, and investment companies which comprise the financial services industry.</span>
@@ -12700,7 +12698,6 @@ Typical unit code(s): C62 for persons.</span>
           <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span>
         </div>
 
-              <!-- before: SavingsAccount-->
               <div typeof="rdfs:Class" resource="http://schema.org/DepositAccount">
                 <span class="h" property="rdfs:label">DepositAccount</span>
                 <span property="rdfs:comment">A type of Bank Account with a main purpose of depositing funds to gain interest or other benefits.</span>
@@ -12725,7 +12722,6 @@ Typical unit code(s): C62 for persons.</span>
           <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span>
         </div>
 
-        <!-- NEEDS EXPLANATION -->
         <div typeof="rdf:Property" resource="http://schema.org/requiredCollateral">
           <span class="h" property="rdfs:label">requiredCollateral</span>
           <span property="rdfs:comment">Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)</span>
@@ -12752,20 +12748,11 @@ Typical unit code(s): C62 for persons.</span>
 
 		        <div typeof="rdfs:Class" resource="http://schema.org/PaymentService">
 		          <span class="h" property="rdfs:label">PaymentService</span>
-		          <span property="rdfs:comment">A Service to transfer funds from a person or organization to a beneficiary person or organization
-		&lt;br /&gt;
-		Commonly used values:&lt;br /&gt;
-		&lt;br /&gt;
-		http://wisem.makolab.pl/fibo/BankTransfer.html &lt;br /&gt;
-		http://wisem.makolab.pl/fibo/CashPayment.html &lt;br /&gt;
-		http://wisem.makolab.pl/fibo/ChequePayment.html &lt;br /&gt;
-		http://wisem.makolab.pl/fibo/PaymentCard.html &lt;br /&gt;
-		          </span>
+		          <span property="rdfs:comment">A Service to transfer funds from a person or organization to a beneficiary person or organization.</span>
 		          <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/FinancialProduct">FinancialProduct</a></span>
 		          <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">FIBO</a></span>
 		        </div>  
 
-		        <!-- NEEDS EXPLANATION -->
 		        <div typeof="rdfs:Class" resource="http://schema.org/CurrencyConversionService">
 		          <span class="h" property="rdfs:label">CurrencyConversionService</span>
 		          <span property="rdfs:comment">A service to convert funds from one currency to another currency.</span>
