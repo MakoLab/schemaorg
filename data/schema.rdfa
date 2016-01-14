@@ -12630,7 +12630,7 @@ Typical unit code(s): C62 for persons.</span>
 
 <div typeof="http://schema.org/Organization" resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO">
     <span property="rdfs:label">FIBO</span>
-    <span property="rdfs:comment">This element is based on the work of the Financial Industry Business Ontology project (see &lt;a href="http://www.edmcouncil.org/fiboschema"&gt;http://www.edmcouncil.org/fiboschema&lt;/a&gt; for details), in support of the W3C Financial Industry Business Ontology Community Group ( &lt;a href="https://www.w3.org/community/fibo""&gt;https://www.w3.org/community/fibo&lt;/a&gt;). Many class and property definitions are inspired by or based on &lt;a href="http://www.edmcouncil.org/financialbusiness"&gt;http://www.edmcouncil.org/financialbusiness&lt;/a&gt;.</span>
+    <span property="rdfs:comment">This element is based on the work of the Financial Industry Business Ontology project (see &lt;a href="http://www.fibo.org/schema"&gt;http://www.fibo.org/schema&lt;/a&gt; for details), in support of the W3C Financial Industry Business Ontology Community Group ( &lt;a href="http://www.fibo.org/community""&gt;http://www.fibo.org/community&lt;/a&gt;). Many class and property definitions are inspired by or based on &lt;a href="http://www.fibo.org"&gt;http://www.fibo.org&lt;/a&gt;.</span>
   </div>
 
   <div typeof="rdfs:Class" resource="http://schema.org/MonetaryAmount">
