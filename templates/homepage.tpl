@@ -52,6 +52,8 @@ These proposals include the following Properties:
 	<li><a href="/interestRate">interestRate</a></li>
 	<li><a href="/leiCode">leiCode</a></li>
 	<li><a href="/loanTerm">loanTerm</a></li>
+	<li><a href="/maxAmount">maxAmount</a></li>
+	<li><a href="/minAmount">minAmount</a></li>
 	<li><a href="/requiredCollateral">requiredCollateral</a></li>
 </ul>	
 These proposals include updates to the following current schema.org terms:

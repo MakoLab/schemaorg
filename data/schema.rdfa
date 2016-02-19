@@ -2897,6 +2897,67 @@
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/FoodEstablishment">FoodEstablishment</a></span>
     </div>
 
+    <div typeof="rdfs:Class" resource="http://schema.org/RestrictedDiet">
+      <span class="h" property="rdfs:label">RestrictedDiet</span>
+      <span property="rdfs:comment">A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons.</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Enumeration">Enumeration</a></span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/DiabeticDiet">
+      <span class="h" property="rdfs:label">DiabeticDiet</span>
+      <span property="rdfs:comment">A diet appropriate for people with diabetes.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/GlutenFreeDiet">
+      <span class="h" property="rdfs:label">GlutenFreeDiet</span>
+      <span property="rdfs:comment">A diet exclusive of gluten.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/HalalDiet">
+      <span class="h" property="rdfs:label">HalalDiet</span>
+      <span property="rdfs:comment">A diet conforming to Islamic dietary practices.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/HinduDiet">
+      <span class="h" property="rdfs:label">HinduDiet</span>
+      <span property="rdfs:comment">A diet conforming to Hindu dietary practices.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/KosherDiet">
+      <span class="h" property="rdfs:label">KosherDiet</span>
+      <span property="rdfs:comment">A diet conforming to Jewish dietary practices.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/LowCalorieDiet">
+      <span class="h" property="rdfs:label">LowCalorieDiet</span>
+      <span property="rdfs:comment">A diet focused on reduced calorie intake.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/LowFatDiet">
+      <span class="h" property="rdfs:label">LowFatDiet</span>
+      <span property="rdfs:comment">A diet focused on reduced fat and cholesterol intake.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/LowLactoseDiet">
+      <span class="h" property="rdfs:label">LowLactoseDiet</span>
+      <span property="rdfs:comment">A diet appropriate for people with lactose intolerance.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/LowSaltDiet">
+      <span class="h" property="rdfs:label">LowSaltDiet</span>
+      <span property="rdfs:comment">A diet focused on reduced sodium intake.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/VeganDiet">
+      <span class="h" property="rdfs:label">VeganDiet</span>
+      <span property="rdfs:comment">A diet exclusive of all animal products.</span>
+    </div>
+
+    <div typeof="http://schema.org/RestrictedDiet" resource="http://schema.org/VegetarianDiet">
+      <span class="h" property="rdfs:label">VegetarianDiet</span>
+      <span property="rdfs:comment">A diet exclusive of animal meat.</span>
+    </div>
+
     <div typeof="rdfs:Class" resource="http://schema.org/Review">
       <span class="h" property="rdfs:label">Review</span>
       <span property="rdfs:comment">A review of an item - for example, of a restaurant, movie, or store.</span>
@@ -7577,6 +7638,12 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/DietarySupplement">DietarySupplement</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MaximumDoseSchedule">MaximumDoseSchedule</a></span>
     </div>
+    <div typeof="rdf:Property" resource="http://schema.org/maxAmount">
+      <span class="h" property="rdfs:label">maxAmount</span>
+      <span property="rdfs:comment">The highest amount if the amount is a range.</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
+    </div>
     <div typeof="rdf:Property" resource="http://schema.org/maxPrice">
       <span class="h" property="rdfs:label">maxPrice</span>
       <span property="rdfs:comment">The highest price if the price is a range.</span>
@@ -7589,7 +7656,6 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/PropertyValue">PropertyValue</a></span>
 	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/PropertyValueSpecification">PropertyValueSpecification</a></span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
     </div>
     <div typeof="rdf:Property" resource="http://schema.org/mechanismOfAction">
@@ -7668,6 +7734,12 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Person">Person</a></span>
       <link property="http://schema.org/supersededBy" href="http://schema.org/seller"/>
     </div>
+    <div typeof="rdf:Property" resource="http://schema.org/minAmount">
+      <span class="h" property="rdfs:label">minAmount</span>
+      <span property="rdfs:comment">The lowest amount if the amount is a range.</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
+    </div>
     <div typeof="rdf:Property" resource="http://schema.org/minPrice">
       <span class="h" property="rdfs:label">minPrice</span>
       <span property="rdfs:comment">The lowest price if the price is a range.</span>
@@ -7680,7 +7752,6 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/PropertyValue">PropertyValue</a></span>
 	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/PropertyValueSpecification">PropertyValueSpecification</a></span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
     </div>
     <div typeof="rdf:Property" resource="http://schema.org/model">
@@ -9454,6 +9525,12 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/PeopleAudience">PeopleAudience</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
     </div>
+    <div typeof="rdf:Property" resource="http://schema.org/suitableForDiet">
+      <span class="h" property="rdfs:label">suitableForDiet</span>
+      <span property="rdfs:comment">Indicates a dietary restriction or guideline for which this recipe is suitable, e.g. diabetic, halal etc.</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Recipe">Recipe</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/RestrictedDiet">RestrictedDiet</a></span>
+    </div>
     <div typeof="rdf:Property" resource="http://schema.org/superEvent">
       <span class="h" property="rdfs:label">superEvent</span>
       <span property="rdfs:comment">An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.</span>
@@ -9763,11 +9840,9 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       <span class="h" property="rdfs:label">value</span>
       <span property="rdfs:comment">The value of the quantitative value or property value node.&lt;br/&gt;
 	For QuantitativeValue, the recommended type for values is &apos;Number&apos;. &lt;br/&gt;
-	For PropertyValue, it can be &apos;Text;&apos;, &apos;Number&apos;, &apos;Boolean&apos;, or &apos;StructuredValue&apos;. &lt;br/&gt;
-	For MonetaryAmount, it can be &apos;Number&apos;, or &apos;Float&apos;.</span>
+	For PropertyValue, it can be &apos;Text;&apos;, &apos;Number&apos;, &apos;Boolean&apos;, or &apos;StructuredValue&apos;. &lt;br/&gt;.</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>
 	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/PropertyValue">PropertyValue</a></span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
 	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
 	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Boolean">Boolean</a></span>
@@ -11894,6 +11969,7 @@ postponing for 1.6.
     <span>domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/DatedMoneySpecification">DatedMoneySpecification</a></span>
     <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/LoanOrCredit">LoanOrCredit</a></span>
     <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InvestmentOrDeposit">InvestmentOrDeposit</a></span>
+    <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
     <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
     <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
   </div>
