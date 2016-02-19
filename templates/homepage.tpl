@@ -36,7 +36,6 @@ These efforts are based on the work of the Financial Industry Business Ontology 
 These proposals include the following Types:
 <ul>
 	<li><a href="/MonetaryAmount">MonetaryAmount</a></li>
-	<li><a href="/RelativePriceSpecification">RelativePriceSpecification</a></li>
 	<li><a href="/FinancialProduct">FinancialProduct</a></li>
 	<li><a href="/BankAccount">BankAccount</a></li>	
 	<li><a href="/DepositAccount">DepositAccount</a></li>
