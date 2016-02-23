@@ -62,15 +62,9 @@ These proposals include updates to the following current schema.org terms:
 	<li><a href="/amount">amount</a></li>
 	<li><a href="/acceptedPaymentMethod">acceptedPaymentMethod</a></li>
 	<li><a href="/aggregateRating">aggregateRating</a></li>
-	<li><a href="/audience">audience</a></li>
-	<li><a href="/brand">brand</a></li>
 	<li><a href="/currency">currency</a></li>
-	<li><a href="/isRelatedTo">isRelatedTo</a></li>
-	<li><a href="/isSimilarTo">isSimilarTo</a></li>
-	<li><a href="/logo">logo</a></li>
 	<li><a href="/maxValue">maxValue</a></li>
 	<li><a href="/minValue">minValue</a></li>
-	<li><a href="/review">review</a></li>
 	<li><a href="/value">value</a></li>
 </ul>
 <hr/>
