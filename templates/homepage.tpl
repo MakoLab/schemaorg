@@ -91,6 +91,15 @@ These proposals include updates to the following current schema.org terms:
 
   <p><br/></p>
 
+{% elif ENABLE_HOSTED_EXTENSIONS and host_ext == "fibo" %}
+  {{ ext.overview(name="FIBO Extension", abbrev="fibo") }}
+
+  <p>  You are viewing the FIBO Extension within <a href="http://schema.org/">schema.org</a>.
+  It defines terms such as ... and adds terms to .... </p>
+<p>These efforts are based on the work of the Financial Industry Business Ontology (FIBO) project (see <a href="http://www.edmcouncil.org/financialbusiness/fiboschemaorg">http://www.edmcouncil.org/financialbusiness/fiboschemaorg</a> for details), with support of the W3C FIBO Community Group ( <a href="https://www.w3.org/community/fibo">https://www.w3.org/community/fibo</a>). </p>
+
+  <p><br/></p>
+
 {% elif ENABLE_HOSTED_EXTENSIONS and host_ext == "test001" %}
   {{ ext.overview(name="Test Extension", abbrev="test1") }}
 
