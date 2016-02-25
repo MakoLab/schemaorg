@@ -61,7 +61,7 @@
         <span class="h" property="rdfs:label">textChat</span>
         <span property="rdfs:comment">The text chat URL to access the service.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ServiceChannel">ServiceChannel</a></span>
-        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Boolean">URL</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/URL">URL</a></span>
     </div>
 
     <div typeof="rdf:Property" resource="http://schema.org/email">
