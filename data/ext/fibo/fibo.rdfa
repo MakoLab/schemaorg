@@ -97,7 +97,7 @@
     <div typeof="rdf:Property" resource="http://schema.org/domiciled">
         <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
         <span class="h" property="rdfs:label">domiciled</span>
-        <span property="rdfs:comment"></span>
+        <span property="rdfs:comment">Whether borrower is a resident of the jurisdiction where the property is located.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MortgageLoan">MortgageLoan</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Boolean">Boolean</a></span>
     </div>
@@ -139,7 +139,7 @@
         <span class="h" property="rdfs:label">loanAmortizationPaymentsNumber</span>
         <span property="rdfs:comment">The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/RepaymentSpecification">RepaymentSpecification</a></span>
-        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
     </div>
     
     <div typeof="rdf:Property" resource="http://schema.org/loanPaymentFrequency">
@@ -147,7 +147,23 @@
         <span class="h" property="rdfs:label">loanPaymentFrequency</span>
         <span property="rdfs:comment">Frequency of payments due, i.e. number of months between payments. This is defined as a frequency, i.e. the reciprocal of a period of time.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/RepaymentSpecification">RepaymentSpecification</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
+    </div>
+
+    <div typeof="rdf:Property" resource="http://schema.org/paymentAmount">
+        <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
+        <span class="h" property="rdfs:label">paymentAmount</span>
+        <span property="rdfs:comment">The amount of money to pay in a single payment.</span>
+        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/RepaymentSpecification">RepaymentSpecification</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
+    </div>
+
+    <div typeof="rdf:Property" resource="http://schema.org/downPayment">
+        <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
+        <span class="h" property="rdfs:label">downPayment</span>
+        <span property="rdfs:comment">a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.</span>
+        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/RepaymentSpecification">RepaymentSpecification</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
     </div>
     
     <div typeof="rdf:Property" resource="http://schema.org/gracePeriod">
@@ -182,7 +198,7 @@
         <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
         <span class="h" property="rdfs:label">monthlyMinimumRepaymentAmount</span>
         <span property="rdfs:comment">The minimum payment is the lowest amount of money that one is required to pay on a credit card statement each month.</span>
-        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/MortgageLoan">CreditCard</a></span>
+        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/CreditCard">CreditCard</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
     </div>
