@@ -176,6 +176,7 @@
     
     <div typeof="rdf:Property" resource="http://schema.org/currency">
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/LoanOrCredit">LoanOrCredit</a></span>
+        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ExchangeRateSpecification">ExchangeRateSpecification</a></span>
     </div>
 
     <div typeof="rdf:Property" resource="http://schema.org/renegotiable">
