@@ -76,6 +76,7 @@
         <span property="rdfs:comment">The type of a bank account.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/BankAccount">BankAccount</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/URL">URL</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
 
     <div typeof="rdf:Property" resource="http://schema.org/acceptableOverdraft">
@@ -116,6 +117,7 @@
         <span property="rdfs:comment">The type of a loan or credit.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/LoanOrCredit">LoanOrCredit</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/URL">URL</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
 
     <div typeof="rdf:Property" resource="http://schema.org/repaymentForm">
@@ -134,9 +136,9 @@
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
     </div>
     
-    <div typeof="rdf:Property" resource="http://schema.org/loanAmortizationPaymentsNumber">
+    <div typeof="rdf:Property" resource="http://schema.org/numberOfPayments">
         <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
-        <span class="h" property="rdfs:label">loanAmortizationPaymentsNumber</span>
+        <span class="h" property="rdfs:label">numberOfPayments</span>
         <span property="rdfs:comment">The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/RepaymentSpecification">RepaymentSpecification</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
@@ -163,6 +165,7 @@
         <span class="h" property="rdfs:label">downPayment</span>
         <span property="rdfs:comment">a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/RepaymentSpecification">RepaymentSpecification</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
     </div>
     
@@ -254,19 +257,12 @@
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Boolean">Boolean</a></span>
     </div>
 
-    <div typeof="rdf:Property" resource="http://schema.org/transferDate">
+    <div typeof="rdf:Property" resource="http://schema.org/beneficiaryBank">
         <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
-        <span class="h" property="rdfs:label">transferDate</span>
-        <span property="rdfs:comment">The date and time of the transfer.</span>
+        <span class="h" property="rdfs:label">beneficiaryBank</span>
+        <span property="rdfs:comment">A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/BankTransfer">BankTransfer</a></span>
-        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/DateTime">DateTime</a></span>
-    </div>
-    
-    <div typeof="rdf:Property" resource="http://schema.org/transferTitle">
-        <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
-        <span class="h" property="rdfs:label">transferTitle</span>
-        <span property="rdfs:comment">The title of the transfer.</span>
-        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/BankTransfer">BankTransfer</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/BankOrCreditUnion">BankOrCreditUnion</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
 </div>
