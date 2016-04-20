@@ -79,10 +79,10 @@
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
 
-    <div typeof="rdf:Property" resource="http://schema.org/acceptableOverdraft">
+    <div typeof="rdf:Property" resource="http://schema.org/overdraftLimit">
         <link property="http://schema.org/isPartOf" href="http://fibo.schema.org" />
-        <span class="h" property="rdfs:label">acceptableOverdraft</span>
-        <span property="rdfs:comment">An amount that exceeds a deposit against which the customer can make withdrawals.</span>
+        <span class="h" property="rdfs:label">overdraftLimit</span>
+        <span property="rdfs:comment">An overdraft is an extension of credit from a lending institution when an account reaches zero. An overdraft allows the individual to continue withdrawing money even if the account has no funds in it. Basically the bank allows people to borrow a set amount of money.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/BankAccount">BankAccount</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/MonetaryAmount">MonetaryAmount</a></span>
     </div>
