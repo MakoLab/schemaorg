@@ -1,4 +1,4 @@
-onTYPES: #fiboex-1 CreditCard, MonetaryAmount, UnitPriceSpecification
+TYPES: #fiboex-1 CreditCard, MonetaryAmount, UnitPriceSpecification
 
 PRE-MARKUP:
 
@@ -740,7 +740,6 @@ JSON:
 }
 </script>
 
-TYPES: #fiboex-5 PaymentCard
 TYPES: #fiboex-5 PaymentCard
 
 PRE-MARKUP:
