@@ -9,7 +9,7 @@
 				</h1>
 				</div>
 				<div id="cse-search-form" style="width: 400px;"></div>
-<script type="text/javascript" src="//www.google.com/jsapi"></script> 
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
 <script type="text/javascript">
 google.load('search', '1', {language : 'en', style : google.loader.themes.ESPRESSO});
 google.setOnLoadCallback(function() {
@@ -32,18 +32,18 @@ customSearchControl.draw('cse-search-form', options);
 	        {% else %}
 	        <li>
 	        {% endif %}
-				<a href="http://schema.org/docs/documents.html">Documentation</a>
+				<a href="/docs/documents.html">Documentation</a>
 			</li>
 	        {% if menu_sel == "Schemas" %}
 	        <li class="activelink">
 	        {% else %}
 	        <li>
 	        {% endif %}
-				<a href="http://schema.org/docs/schemas.html">Schemas</a>
+				<a href="/docs/schemas.html">Schemas</a>
 			</li>
 			<li>
 	        {% if home_page == "True" %}
-				<a href="http://schema.org/docs/about.html">About</a>
+				<a href="{{staticPath}}/docs/about.html">About</a>
 	        {% else %}
 				<a href="/">Home</a>
 	        {% endif %}
@@ -52,5 +52,19 @@ customSearchControl.draw('cse-search-form', options);
 	</div>
 </div>
 <div style="padding: 14px; float: right;" id="languagebox"></div>
-<!-- Header end from basicPageHeader.tpl -->
 
+{% if mybasehost in [ "webschemas.org", "localhost"] %}
+<div class="devnote"><b>Note</b>: you are viewing the
+	<a href="http://webschemas.org/">webschemas.org</a> development
+	version of <a href="http://schema.org/">schema.org</a>.
+	See <a href="/docs/howwework.html">How we work</a> for more details.
+</div>
+{% endif %}
+
+{% if sitename != "schema.org" %}
+<div class="pendnote">
+	<b><a href="{{staticPath}}">core</a></b> + <a href="{{extensionPath}}">{{host_ext}}</a>
+	({{extName}}): {{extDD|safe}}</div>
+{% endif %}
+
+<!-- Header end from basicPageHeader.tpl -->
