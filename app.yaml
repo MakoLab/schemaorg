@@ -1,5 +1,6 @@
-application: schemaorgae
+#application: schemaorgae
 #application: webschemas
+application: sdo-auto-fix
 
 version: 1
 module: default
