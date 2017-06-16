@@ -10049,8 +10049,8 @@ Standards bodies should promote a standard prefix for the identifiers of propert
     <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group">GAO</a></span>
 </div>
 
-<div typeof="rdf:Property" resource="http://schema.org/vehicleModelDate">
-    <span class="h" property="rdfs:label">vehicleModelDate</span>
+<div typeof="rdf:Property" resource="http://schema.org/modelDate">
+    <span class="h" property="rdfs:label">modelDate</span>
     <span property="rdfs:comment">The release date of a vehicle model (often used to differentiate versions of the same make and model).</span>
     <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Vehicle">Vehicle</a></span>
     <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Date">Date</a></span>
@@ -10084,8 +10084,8 @@ Standards bodies should promote a standard prefix for the identifiers of propert
     <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group">GAO</a></span>
 </div>
 
-<div typeof="rdf:Property" resource="http://schema.org/vehicleSeatingCapacity">
-    <span class="h" property="rdfs:label">vehicleSeatingCapacity</span>
+<div typeof="rdf:Property" resource="http://schema.org/seatingCapacity">
+    <span class="h" property="rdfs:label">seatingCapacity</span>
     <span property="rdfs:comment">The number of passengers that can be seated in the vehicle, both in terms of the physical space available, and in terms of limitations set by law.\n\nTypical unit code(s): C62 for persons.</span>
     <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Vehicle">Vehicle</a></span>
     <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>

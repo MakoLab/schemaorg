@@ -127,15 +127,6 @@
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/URL">URL</a></span>
         <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group">GAO</a></span>
     </div>
-    <div typeof="rdf:Property" resource="http://schema.org/seatingCapacity">
-        <link property="http://schema.org/isPartOf" href="http://auto.schema.org" />
-        <span class="h" property="rdfs:label">seatingCapacity</span>
-        <span property="rdfs:comment">The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\n\nTypical unit code(s): C62 for persons </span>
-        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Vehicle">Vehicle</a></span>
-        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>
-        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
-        <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group">GAO</a></span>
-    </div>
     <div typeof="rdf:Property" resource="http://schema.org/trailerWeight">
         <link property="http://schema.org/isPartOf" href="http://auto.schema.org" />
         <span class="h" property="rdfs:label">trailerWeight</span>
@@ -177,15 +168,6 @@
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
         <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group">GAO</a></span>
     </div>
-    <div typeof="rdf:Property" resource="http://schema.org/modelDate">
-        <link property="http://schema.org/isPartOf" href="http://auto.schema.org" />
-        <span class="h" property="rdfs:label">modelDate</span>
-        <span property="rdfs:comment">The release date of a vehicle model (often used to differentiate versions of the same make and model).</span>
-        <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Vehicle">Vehicle</a></span>
-        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Date">Date</a></span>
-        <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group">GAO</a></span>
-    </div>
-
     <div typeof="rdf:Property" resource="http://schema.org/torque">
         <link property="http://schema.org/isPartOf" href="http://auto.schema.org" />
         <span class="h" property="rdfs:label">torque</span>
@@ -201,6 +183,7 @@
         <span property="rdfs:comment">The CO2 emissions in g/km. When used in combination with a QuantitativeValue, put &quot;g/km&quot; into the unitText property of that value, since there is no UN/CEFACT Common Code for &quot;g/km&quot;.</span>
         <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Vehicle">Vehicle</a></span>
         <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
+        <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>
         <span>Source:  <a property="dc:source" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group">GAO</a></span>
     </div>
 
