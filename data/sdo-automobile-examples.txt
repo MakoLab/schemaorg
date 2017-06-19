@@ -1,4 +1,6 @@
-TYPES: Car
+
+
+TYPES: Car, vehicleEngine, numberOfForwardGears, numberOfAirbags
 
 PRE-MARKUP:
 
@@ -116,12 +118,6 @@ JSON:
 
 
 
-
-
-
-
-
-
 TYPES: FULLEXAMPLEFORAUTOEXTENSIONCar
 
 PRE-MARKUP:
@@ -231,7 +227,7 @@ JSON:
             "@type": "EngineSpecification",
             "name" : "4 cylinder Petrol Turbo Intercooled 2.0 L (1984 cc)"
             },
-        "airbags" : "6"
+        "numberOfAirbags" : "6"
         }
     }
 }
@@ -239,9 +235,294 @@ JSON:
 
 
 
+TYPES: Car, knownVehicleDamages, dateVehicleFirstRegistered, purchaseDate, vehicleSpecialUsage
 
-TYPES:  FakeEntryNeeded, FixMeSomeDay
 PRE-MARKUP:
+
+<!-- used car with damages -->
+Ex Driving School Car For Sale
+
+Model: Exemplary Car Model Name
+Reg. date: 12/06/2008
+Purchase date: 17/01/2010
+Previous owners excl. current: 1
+
+excellent condition apart from damaged area 
+car has damage to passenger front corner;
+no chassis damaged, no radiators damaged, no airbags deployed
+
+
 MICRODATA:
+
+<!-- Only JSON-LD example is available. -->
+
 RDFA:
+
+<!-- Only JSON-LD example is available. -->
+
 JSON:
+
+<script type="application/ld+json">
+{
+  "@context":"http://schema.org/",
+  "@type":"Car",
+  "name":"Exemplary Car Model Name",
+  "knownVehicleDamages":"excellent condition apart from damaged area car has damage to passenger front corner; no chassis damaged, no radiators damaged, no airbags deployed",
+  "dateVehicleFirstRegistered":"2008-06-12",
+  "purchaseDate":"2010-01-17",
+  "numberOfPreviousOwners":"2",
+  "vehicleSpecialUsage":"DrivingSchoolVehicleUsage"
+
+}
+</script>
+
+
+
+
+TYPES: Car, acrissCode, seatingCapacity, numberOfDoors, cargoVolume, additionalProperty
+
+PRE-MARKUP:
+
+<!-- rental car with acriss code -->
+Exemplary Car Model Name | SCAR
+Rental price per day EUR 20
+
+Equipment, seats and luggage
+Air conditioning available
+4 Doors
+5 Passengers
+2 Suitcase(s)
+2 Bag(s)
+Automatic transmission
+
+
+MICRODATA:
+
+<!-- Only JSON-LD example is available. -->
+
+RDFA:
+
+<!-- Only JSON-LD example is available. -->
+
+JSON:
+
+<script type="application/ld+json">
+{
+   "@context":"http://schema.org/",
+   "@type":"Car",
+   "name":"Exemplary Car Model Name",
+   "acrissCode":"SCAR",
+   "seatingCapacity": "5",
+   "numberOfDoors": "4",
+   "vehicleTransmission": "automatic gearbox",
+   "cargoVolume":[{
+         "@type":"QuantitativeValue",
+         "value":"2",
+         "unitText":"bags"},
+         {
+         "@type":"QuantitativeValue",
+         "value":"2",
+         "unitText":"suitcases"}],
+   "additionalProperty":{
+        "@type":"PropertyValue",
+        "name":"air conditioning"
+        },
+   "offers":{
+     "@type":"Offer",
+     "offeredBy": {
+        "@type": "AutoRental",
+        "name":"Rent Car Company",
+        "image": "http://AutoRental.com/rent_company.jpg"
+      },    
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "20",
+        "priceCurrency": "EUR",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": "1",
+          "unitCode": "DAY"
+        }
+      }
+  }   
+}   
+</script>
+
+
+
+
+
+TYPES: Car, BusOrCoach, CarUsageType, EngineSpecification, vehicleConfiguration, vehicleIdentificationNumber, productionDate, modelDate, bodyType, steeringPosition, driveWheelConfiguration, vehicleInteriorType, vehicleInteriorColor, numberOfAirbags, numberOfAxles, numberOfDoors, seatingCapacity, cargoVolume, weightTotal, wheelbase, vehicleTransmission, numberOfForwardGears, vehicleEngine, engineType, torque, enginePower, accelerationTime, speed, fuelCapacity, fuelConsumption, mileageFromOdometer, emissionsCO2
+
+PRE-MARKUP:
+
+<!-- new car, hybrid car -->
+
+Exemplary Hybrid Car Model Name
+VIN: 1HTLCZWN0JH503089
+
+White, hatchback, limited edition
+
+leather, beige interior
+
+4 doors, 6 airbags
+
+5 passengers
+
+Steering position: left side steering
+
+ENGINE
+Type:  1580cc
+Horsepower:  104 hp @ 5,700 rpm
+Torque:  109 lb.-ft. @ 4,000 rpm
+Fuel tank capacity: 11.9 gallons
+
+Electric Motor
+Motor Type  AC Synchronous Permanent Magnet Motor
+Horsepower:  43 hp
+Torque:  125 lb.-ft.
+Battery Capacity:  6.5 Ah
+
+CO2 emissions: 88g/km
+
+Wheel configuration: RWD
+
+Number of axles: 2
+
+Transmission Type 6-speed dual clutch automatic transmission (DCT)
+
+Wheelbase: 106.3 in.
+
+Luggage capacity, rear seats upright: 19.4 cu. ft.
+
+Weight: 1425 kg
+
+Acceleration 0..100 km/h: 11.5 s
+
+Top speed: 210 km/h
+
+Fuel consumption: 3.5l/100km
+
+
+
+MICRODATA:
+
+<!-- Only JSON-LD example is available. -->
+
+RDFA:
+
+<!-- Only JSON-LD example is available. -->
+
+JSON:
+
+<script type="application/ld+json">
+{
+  "@context":"http://schema.org/",
+  "@type":"Car",
+  "name":"Exemplary Hybrid Car Model Name",
+  "manufacturer":"Exemplary Car Manufacturer",   
+  "vehicleConfiguration":"limited edition",
+  "vehicleIdentificationNumber":"1HTLCZWN0JH503089",
+  "productionDate":"2017",      
+  "modelDate":"2016-01-01",
+  "bodyType":"hatchback",
+  "steeringPosition":"LeftHandDriving",    
+  "driveWheelConfiguration":"RearWheelDriveConfiguration",
+  "color":"White",   
+  "vehicleInteriorType":"leather",
+  "vehicleInteriorColor":"beige interior",  
+  "numberOfAirbags" : "6",   
+  "numberOfAxles":"2",
+  "numberOfDoors": "5",
+  "seatingCapacity": "5", 
+  "cargoVolume":{
+        "@type":"QuantitativeValue",
+        "value":"19.4",
+        "unitCode":"FTQ"},        
+  "weightTotal":{
+        "@type":"QuantitativeValue",
+        "maxValue":"1425",
+        "unitCode":"KGM"},         
+
+  "wheelbase":{
+        "@type":"QuantitativeValue",
+        "maxValue":"106.3",
+        "unitCode":"INH"},    
+
+  "vehicleTransmission": "automatic gearbox",   
+  "numberOfForwardGears" : "6",   
+
+  "vehicleEngine":[
+      {
+     "@type":"EngineSpecification",
+     "engineType":"internal combustion engine",
+     "fuelType":"petrol",
+     "engineDisplacement":{
+        "@type":"QuantitativeValue",
+        "value":"1580",
+        "unitCode":"CMQ"},
+     "torque":{
+        "@type":"QuantitativeValue",
+        "value":"109",
+        "unitCode":"F17"},   
+     "enginePower":{
+        "@type":"QuantitativeValue",
+        "value":"104",
+        "unitCode":"BHP"}},
+     {
+     "@type":"EngineSpecification",
+     "engineType":"electric motor",
+     "torque":{
+        "@type":"QuantitativeValue",
+        "value":"125",
+        "unitCode":"F17"},       
+     "enginePower":{
+        "@type":"QuantitativeValue",
+        "value":"43",
+        "unitCode":"BHP"}}
+  ], 
+
+  "accelerationTime":{
+     "@type":"QuantitativeValue",
+     "value":"11.5",
+     "unitCode":"SEC",
+     "valueReference":{
+      "@type":"QuantitativeValue",
+       "unitText":"0..100 km/h"
+     }}, 
+
+   "speed":{
+        "@type":"QuantitativeValue",
+        "maxValue":"210",
+        "unitCode":"KMH"},   
+
+  "fuelCapacity":[{
+        "@type":"QuantitativeValue",
+        "value":"11.9",
+        "unitCode":"GLL"},
+        {
+        "@type":"QuantitativeValue",
+        "value":"6.5",
+        "unitText":"AMH"}
+        ],
+
+  "fuelConsumption":{
+        "@type":"QuantitativeValue",
+        "value":"3.5",
+        "unitText":"L/100km"},
+
+  "mileageFromOdometer":{
+     "@type":"QuantitativeValue",
+     "value":"1",
+     "unitCode":"KMT"
+  },
+
+  "emissionsCO2": "88"
+  }
+}
+</script>
+
+
+
+
+
