@@ -16,12 +16,49 @@
 
 {% import 'ext.tpl' as ext with context %}
 
-{% if mybasehost in [ "sdo-deimos.appspot.com", "sdo-phobos.appspot.com", "sdo-ganymede.appspot.com", "sdo-gozer.appspot.com", "sdo-callisto.appspot.com", "webschemas.org", "sdo-scripts.appspot.com", "localhost" ] %}
+{% if mybasehost in [ "sdo-deimos.appspot.com", "sdo-phobos.appspot.com", "sdo-ganymede.appspot.com", "sdo-gozer.appspot.com", "sdo-callisto.appspot.com", "webschemas.org", "sdo-scripts.appspot.com", "sdo-auto-fix.appspot.com",  "localhost" ] %}
 
 <!--<p id="lli" class="layerinfo">
 Note: This is {{ mybasehost }}. you are viewing an unstable work-in-progress preview of <a href="http://schema.org/">schema.org</a>.
 See the draft <b><a href="{{staticPath}}/docs/releases.html">releases</a></b> page to learn more about this version ({{ SCHEMA_VERSION }}).
 </p>-->
+
+<br/>
+<h2>Important Note:</h2> You are viewing a test version of Schema.org that includes draft proposals for auto related amendments to the core schema.org and the auto extension vocabularies.<br/><br/>
+
+
+<br/>
+This proposal includes:
+<ul>
+  <li>answering <a href="https://github.com/schemaorg/schemaorg/issues/1651">#1651</a>: quantitativeValue has been added to the range of <a href="http://auto.sdo-auto-fix.appspot.com/emissionsCO2">emissionsCO2</a></li>
+
+  <li>answering <a href="https://github.com/schemaorg/schemaorg/issues/1650">#1650</a>: two properties have been removed from auto hosted extension:
+<ul>
+  <li>http://auto.schema.org/seatingCapacity</li>
+  <li>http://auto.schema.org/modelDate</li>
+</ul>
+<br/>
+Schema.org core properties
+<ul>
+  <li>vehicleSeatingCapacity</li>
+  <li>vehicleModelDate</li>
+</ul>
+have been renamed to
+<ul>
+  <li>seatingCapacity</li>
+  <li>modelDate</li>
+</ul>
+<br/>
+See: <a href="http://sdo-auto-fix.appspot.com/seatingCapacity">http://sdo-auto-fix.appspot.com/seatingCapacity</a> and <a href="http://sdo-auto-fix.appspot.com/modelDate">http://sdo-auto-fix.appspot.com/modelDate</a>
+
+<li>In the example for http://schema.org/Car " "airbags" : "6" " has been changed to " "numberOfAirbags" : "6" " and 3 new examples have been added (they answer to the following issues: <a href="https://github.com/schemaorg/schemaorg/issues/1549">#1549</a> and <a href="https://github.com/schemaorg/schemaorg/issues/1588">#1588</a>).
+
+See the examples <a href="http://sdo-auto-fix.appspot.com/Car">here</a></li>
+
+
+</ul>
+
+<hr/>
 
 {% endif %}
 
