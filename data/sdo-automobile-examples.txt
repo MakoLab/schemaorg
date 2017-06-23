@@ -5,7 +5,7 @@ TYPES: Car, vehicleEngine, numberOfForwardGears, numberOfAirbags
 PRE-MARKUP:
 
 <!-- Seller Details -->
-<div >
+<div>
   <strong>Contact Name: </strong> <span>Brent</span>
   <div>$18,000</div>
 <!-- Car Details -->
@@ -123,7 +123,7 @@ TYPES: FULLEXAMPLEFORAUTOEXTENSIONCar
 PRE-MARKUP:
 
 <!-- Seller Details -->
-<div >
+<div>
   <strong>Contact Name: </strong> <span>Brent</span>
   <div>$18,000</div>
 <!-- Car Details -->
@@ -240,17 +240,18 @@ TYPES: Car, knownVehicleDamages, dateVehicleFirstRegistered, purchaseDate, vehic
 PRE-MARKUP:
 
 <!-- used car with damages -->
-Ex Driving School Car For Sale
+<div>
+<h3>Ex Driving School Car For Sale</h3>
 
-Model: Exemplary Car Model Name
-Reg. date: 12/06/2008
-Purchase date: 17/01/2010
-Previous owners excl. current: 1
+<p><strong>Model:</strong>Exemplary Car Model Name</p>
+<p><strong>Reg. date:</strong> 12/06/2008</p>
+<p><strong>Purchase date:</strong> 17/01/2010</p>
+<p><strong>Previous owners excl. current:</strong> 1</p>
 
-excellent condition apart from damaged area 
+<p>excellent condition apart from damaged area 
 car has damage to passenger front corner;
-no chassis damaged, no radiators damaged, no airbags deployed
-
+no chassis damaged, no radiators damaged, no airbags deployed</p>
+</div>
 
 MICRODATA:
 
@@ -284,20 +285,23 @@ TYPES: Car, acrissCode, seatingCapacity, numberOfDoors, cargoVolume, additionalP
 PRE-MARKUP:
 
 <!-- rental car with acriss code -->
-Rent Car Company
+<div>
+<h2>Rent Car Company</h2>
 <img href="http://AutoRental.com/rent_company.jpg"/>
 
-Exemplary Car Model Name | SCAR
-Rental price per day: EUR 20
+<h3>Exemplary Car Model Name | <strong>SCAR</strong> </h3>
+<p>Rental price per day: EUR 20</p>
 
-Equipment, seats and luggage
-Air conditioning available
-4 Doors
-5 Passengers
-2 Suitcase(s)
-2 Bag(s)
-Automatic transmission
-
+<p>Equipment, seats and luggage</p>
+<ul>
+  <li>Air conditioning available
+  <li>4 Doors</li>
+  <li>5 Passengers</li>
+  <li>2 Suitcase(s)</li>
+  <li>2 Bag(s)</li>
+  <li>Automatic transmission</li>
+</ul>
+</div>
 
 MICRODATA:
 
@@ -360,51 +364,53 @@ TYPES: Car, BusOrCoach, CarUsageType, EngineSpecification, vehicleConfiguration,
 PRE-MARKUP:
 
 <!-- new car, hybrid car -->
-Exemplary Hybrid Car Model Name
-VIN: 1HTLCZWN0JH503089
 
-White, hatchback, limited edition
+<div>
+<h3>Exemplary Hybrid Car Model Name</h3>
+<p>VIN: 1HTLCZWN0JH503089</p>
 
-leather, beige interior
+<p>White, hatchback, limited edition</p>
 
-4 doors, 6 airbags
+<p>leather, beige interior</p>
 
-5 passengers
+<p>4 doors, 6 airbags</p>
 
-Steering position: left side steering
+<p>5 passengers</p>
 
-ENGINE
-Type:  1580cc
-Horsepower:  104 hp @ 5,700 rpm
-Torque:  109 lb.-ft. @ 4,000 rpm
-Fuel tank capacity: 11.9 gallons
+<ul>
+  <li>Steering position: left side steering</li>
 
-Electric Motor
-Motor Type  AC Synchronous Permanent Magnet Motor
-Horsepower:  43 hp
-Torque:  125 lb.-ft.
-Battery Capacity:  6.5 Ah
+  <li><strong>ENGINE Type:</strong>  1580cc</li>
+  <li><strong>Horsepower:</strong>  104 hp @ 5,700 rpm</li>
+  <li><strong>Torque:</strong>  109 lb.-ft. @ 4,000 rpm</li>
+  <li><strong>Fuel tank capacity:</strong> 11.9 gallons</li>
 
-CO2 emissions: 88g/km
+  <li><strong>Electric Motor Type:</strong>  AC Synchronous Permanent Magnet Motor</li>
+  <li><strong>Horsepower:</strong>  43 hp</li>
+  <li><strong>Torque:</strong>  125 lb.-ft.</li>
+  <li><strong>Battery Capacity:</strong>  6.5 Ah</li>
 
-Wheel configuration: RWD
+  <li><strong>CO2 emissions:</strong> 88g/km</li>
 
-Number of axles: 2
+  <li><strong>Wheel configuration:</strong> RWD</li>
 
-Transmission Type 6-speed dual clutch automatic transmission (DCT)
+  <li><strong>Number of axles:</strong> 2</li>
 
-Wheelbase: 106.3 in.
+  <li><strong>Transmission Type:</strong> 6-speed dual clutch automatic transmission (DCT)</li>
 
-Luggage capacity, rear seats upright: 19.4 cu. ft.
+  <li><strong>Wheelbase:</strong> 106.3 in.</li>
 
-Weight: 1425 kg
+  <li><strong>Luggage capacity, rear seats upright:</strong> 19.4 cu. ft.</li>
 
-Acceleration 0..100 km/h: 11.5 s
+  <li><strong>Weight:</strong> 1425 kg</li>
 
-Top speed: 210 km/h
+  <li><strong>Acceleration 0..100 km/h:</strong> 11.5 s</li>
 
-Fuel consumption: 3.5l/100km
+  <li><strong>Top speed:</strong> 210 km/h</li>
 
+  <li><strong>Fuel consumption:</strong> 3.5l/100km</li>
+</ul>
+</div>
 
 
 MICRODATA:
