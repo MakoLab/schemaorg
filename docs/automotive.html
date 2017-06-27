@@ -138,9 +138,11 @@
                 The following diagrams present the conceptual map of the extension. As it was explained before, the map contains elements from both the schema.org "core" and the actual automotive extension (at <a href="http://auto.schema.org">http://auto.schema.org</a>).
             </p>
             
-            <img alt="Mind Map for schema.org automotive extension" src="automotive-img/1.png" title="Mind Map for schema.org automotive extension" border="0" onload="this.width *= 0.55;" />
+            <img alt="Mind Map for schema.org automotive extension" src="automotive-img/VehicleHierarchy.png" title="Mind Map for schema.org automotive extension" style="border: 0" />
+            
+            <br />
 
-            <img alt="Mind Map for schema.org automotive extension" src="automotive-img/2.png" title="Mind Map for schema.org automotive extension" border="0" onload="this.width *= 0.55;" />
+            <img alt="Mind Map for schema.org automotive extension" src="automotive-img/CarHierarchy.png" title="Mind Map for schema.org automotive extension" style="border: 0" />
             
             <p>
                 The terms depicted on the <span style="background-color: violet">violet background</span> are documented in auto.schema.org, the remaining one are in the core vocabulary of schema.org.
@@ -150,11 +152,218 @@
                 Please note that the map shows the extension properties for the type "Car" which, together with "BusOrCoach", "Motorcycle" and "MotorizedBicycle" is subclassed from "Vehicle" type already existing in schema.org.                
             </p>
             
-            <h2>The complete hierarchy of all terms in the financial extension</h2>
+            <h2>The complete hierarchy of all terms in the automotive extension</h2>
             
-            <p>
-                ...
-            </p>
+            <h3>Types:</h3>            
+            
+            <ul>
+                <li>
+                    <a style="color:gray" href="http://schema.org/Thing">Thing</a>
+                    <ul>
+                        <li>
+                            <a style="color:gray" href="http://schema.org/Product">Product</a>
+                            <ul>
+                                <li>
+                                    <a style="color:gray" href="http://schema.org/Vehicle">Vehicle</a>
+                                    <ul>
+                                        <li>
+                                            <a href="http://schema.org/Car">Car</a>
+                                        </li>
+                                        <li>
+                                            <a style="color:red" href="http://schema.org/BusOrCoach">BusOrCoach</a>
+                                        </li>
+                                        <li>
+                                            <a style="color:red" href="http://schema.org/Motorcycle">Motorcycle</a>
+                                        </li>
+                                        <li>
+                                            <a style="color:red" href="http://schema.org/MotorizedBicycle">MotorizedBicycle</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a style="color:gray" href="http://schema.org/Intangible">Intangible</a>
+                            <ul>
+                                <li>
+                                    <a style="color:gray" href="http://schema.org/Enumeration">Enumeration</a>
+                                    <ul>
+                                        <li>
+                                            <a style="color:gray" href="http://schema.org/QualitativeValue">QualitativeValue</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="http://schema.org/CarUsageType">CarUsageType</a>
+                                                </li>
+                                                <li>
+                                                    <a href="http://schema.org/DriveWheelConfigurationValue">DriveWheelConfigurationValue</a>
+                                                </li>
+                                                <li>
+                                                    <a href="http://schema.org/SteeringPositionValue">SteeringPositionValue</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a style="color:gray" href="http://schema.org/StructuredValue">StructuredValue</a>
+                                    <ul>
+                                        <li>
+                                            <a href="http://schema.org/EngineSpecification">EngineSpecification</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>Properties:</h3>
+            
+            <ul>
+                <li>
+                    <a style="color:gray" href="http://schema.org/Thing">Thing</a>
+                    <ul>
+                        <li>
+                            <a style="color:gray" href="http://schema.org/Property">Property</a>
+                            <ul>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/accelerationTime">accelerationTime</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/acrissCode">acrissCode</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/bodyType">bodyType</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/cargoVolume">cargoVolume</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/dateVehicleFirstRegistered">dateVehicleFirstRegistered</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/driveWheelConfiguration">driveWheelConfiguration</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/emissionsCO2">emissionsCO2</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/engineDisplacement">engineDisplacement</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/enginePower">enginePower</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/engineType">engineType</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/fuelCapacity">fuelCapacity</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/fuelConsumption">fuelConsumption</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/fuelEfficiency">fuelEfficiency</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/fuelType">fuelType</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/knownVehicleDamages">knownVehicleDamages</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/meetsEmissionStandard">meetsEmissionStandard</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/mileageFromOdometer">mileageFromOdometer</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/modelDate">modelDate</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/numberOfAirbags">numberOfAirbags</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/numberOfAxles">numberOfAxles</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/numberOfDoors">numberOfDoors</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/numberOfForwardGears">numberOfForwardGears</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/numberOfPreviousOwners">numberOfPreviousOwners</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/payload">payload</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/productionDate">productionDate</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/purchaseDate">purchaseDate</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/roofLoad">roofLoad</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/seatingCapacity">seatingCapacity</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/speed">speed</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/steeringPosition">steeringPosition</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/tongueWeight">tongueWeight</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/torque">torque</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/trailerWeight">trailerWeight</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleConfiguration">vehicleConfiguration</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleEngine">vehicleEngine</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleIdentificationNumber">vehicleIdentificationNumber</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleInteriorColor">vehicleInteriorColor</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleInteriorType">vehicleInteriorType</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleModelDate">vehicleModelDate</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleSeatingCapacity">vehicleSeatingCapacity</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleSpecialUsage">vehicleSpecialUsage</a>
+                                </li>
+                                <li>
+                                    <a href="http://schema.org/vehicleTransmission">vehicleTransmission</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/weightTotal">weightTotal</a>
+                                </li>
+                                <li>
+                                    <a style="color:red" href="http://schema.org/wheelbase">wheelbase</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             
             <h2>The basic models of the objects in the automotive extension</h2>
             
