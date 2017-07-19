@@ -83,8 +83,20 @@
         
         <div id="mainContent">
             <h1>Markup for Autos</h1>
+
+            <h2>Table of contents</h2>
+
+            <ol>
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#conceptual_map">Conceptual map</a></li>
+              <li><a href="#hierarchy_of_terms">Hierarchy of terms</a></li>
+              <li><a href="#extensions_objects">Extension’s objects</a></li>
+              <li><a href="#usage_examples">Usage Examples</a></li>
+              <li><a href="#acknowledgements">Acknowledgements</a></li>
+            </ol>
             
-            <h2>Introduction</h2>
+            <h2 id="introduction">Introduction</h2>
             
             <p>
                 This page provides background Information on the use of schema.org for marking up automobiles. For more information and communication with the community behind the project, please refer to: <a href="http://w3.org/community/gao/">http://w3.org/community/gao/</a>. This work has its roots in the GAO project (<a href="http://www.automotive-ontology.org/">Generic Automotive Ontology</a>) and existing ontologies such as the <a href="http://www.heppnetz.de/ontologies/vso/ns">Vehicle Sales Ontology (VSO)</a>, <a href="http://www.volkswagen.co.uk/vocabularies/coo/ns">Car Options Ontology (COO)</a> and <a href="http://purl.org/uco">Used Cars Ontology (UCO)</a>.
@@ -138,7 +150,7 @@
                 This on-going activity will include both the addition and amendment of the most important types and properties to the schema.org core, to the auto.schema.org extension and also to the future "external" automotive extensions of schema.org that need not be limited by the minimalism of the earlier "lean" approach.
             </p>
             
-            <h2>The conceptual map and hierarchy of the automotive extension</h2>
+            <h2 id="conceptual_map">The conceptual map and hierarchy of the automotive extension</h2>
             
             <p>
                 The following diagrams represent the conceptual map of the extension. As explained before, the map contains elements from both the schema.org "core" and the actual automotive extension (at <a href="http://auto.schema.org">http://auto.schema.org</a>).
@@ -160,7 +172,7 @@
                 Please note that the map shows the extension properties for the type "Car", which, together with "BusOrCoach", "Motorcycle" and "MotorizedBicycle" is sub-classed from the "Vehicle" type already existing in schema.org.
             </p>
             
-            <h2>The complete hierarchy of all terms in the automotive extension</h2>
+            <h2 id="hierarchy_of_terms">The complete hierarchy of all terms in the automotive extension</h2>
             
             <h3>Types:</h3>            
             
@@ -373,7 +385,7 @@
                 </li>
             </ul>
             
-            <h2>The basic models of the objects in the automotive extension</h2>
+            <h2 id="extensions_objects">The basic models of the objects in the automotive extension</h2>
             
             <p>
                 The diagram below illustrates the basic pattern for the description of the main classes of the objects of interest in the extension.
@@ -451,7 +463,7 @@
                 In this example, the type <a href="http://schema.org/Offer">Offer</a> is used to describe <a href="http://schema.org/Car">Car</a> (a sub-class of <a href="http://schema.org/Vehicle">Vehicle</a> which is a sub-class of <a href="http://schema.org/Product">Product</a>) as a product offered to the client. This allows for the expression of the offered price for the car, the currency (<a href="http://schema.org/priceCurrency">priceCurrency</a>) and the <a href="http://schema.org/Organization">Organization</a> offering the product.
             </p>
             
-            <h2>Usage Examples</h2>
+            <h2 id="usage_examples">Usage Examples</h2>
             
             <p>In this section of the document we present several examples of the use of the auto.schema.org mark-up in the HTML pages. Here are examples for: </p>
             
@@ -873,7 +885,7 @@ no chassis damaged, no radiators damaged, no airbags deployed&lt;/p&gt;
 &lt;/script&gt;                
             </pre>
             
-            <h2>Acknowledgments</h2>
+            <h2 id="acknowledgements">Acknowledgments</h2>
             
             <p>
                 We would like to thank the following individuals: Martin Hepp, Dominik Kuzinski, Robert Trypuz and Karol Szczepański, coordinated by Mirek Sopek of MakoLab SA for creating the automotive extension and this document.                
